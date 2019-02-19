@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-
-mongoose.connect(process.env.DB_URL, {
+dburl = 'mongodb://anas:3125mhow@ds117535.mlab.com:17535/onlineschool-api';
+mongoose.connect(dburl, {
 	useNewUrlParser: true,
 	user: process.env.DB_USER,
 	pass: process.env.DB_PASSWORD
